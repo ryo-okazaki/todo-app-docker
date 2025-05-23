@@ -40,7 +40,7 @@ services:
       - "${POSTGRES_PORT:-15432}:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
-      - ./docker/postgresql/postgresql.conf:/etc/postgresql/postgresql.conf
+      - ./dockerfiles/postgresql/postgresql.conf:/etc/postgresql/postgresql.conf
 
   mailhog:
     container_name: mailhog
